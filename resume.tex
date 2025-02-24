@@ -27,19 +27,27 @@
 ]{resume} % Use the resume class
 
 \usepackage{ebgaramond} % Use the EB Garamond font
+\usepackage{hyperref}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{darkblue}{RGB}{0, 0, 135}
+
+\hypersetup{
+    colorlinks,
+    urlcolor={darkblue}
+}
 
 %------------------------------------------------
 
-\name{John Smith} % Your name to appear at the top
+\name{Henry Beveridge} % Your name to appear at the top
 
 % You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
 % Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
 
-\address{123 Broadway \\ City, State 12345} % Main address
+\address{(424)~$\cdot$~415~$\cdot$~9881 \\ henrydbeveridge@gmail.com} % Contact information
 
-\address{123 Pleasant Lane \\ City, State 12345} % A secondary address (optional)
+\address{LinkedIn: \href{https://www.linkedin.com/in/henry-beveridge-786a622a8/}{https://www.linkedin.com/in/henry-beveridge-786a622a8/}} % LinkedIn
 
-\address{(011)~$\cdot$~899~$\cdot$~9881 \\ john@LaTeXTemplates.com} % Contact information
+\address{GitHub: \href{https://github.com/illuminate-dev}{https://github.com/illuminate-dev}} % GitHub
 
 %----------------------------------------------------------------------------------------
 
@@ -51,63 +59,86 @@
 
 \begin{rSection}{Education}
 	
-	\textbf{University of California, Berkeley} \hfill \textit{June 2004} \\ 
-	B.S. in Computer Science \& Engineering \\
-	Minor in Linguistics \smallskip \\
-	Member of Eta Kappa Nu \\
-	Member of Upsilon Pi Epsilon \\
-	Overall GPA: 5.678
+	\textbf{North Hollywood High School} \hfill 2027 \\ 
+	Highly Gifted Magnet \\
+	Relevant Coursework: AP Computer Science A (5), AP Physics C: Mechanics, AP Physics C: E\&M \\
+	Current GPA: 4.67
 	
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Experience}
-
-	\begin{rSubsection}{ACME, Inc}{October 2010 - Present}{Web Developer}{Palo Alto, CA}
-		\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.
-		\item Donec et mollis dolor. Praesent et diam eget libero Adobe Coldfusion egestas mattis sit amet vitae augue.
-		\item Nam tincidunt congue enim, ut porta lorem Microsoft SQL lacinia consectetur.
-		\item Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-		\item Pellentesque auctor nisi id magna consequat JavaScript sagittis.
-		\item Aliquam at massa ipsum. Quisque bash bibendum purus convallis nulla ultrices ultricies.
-	\end{rSubsection}
-
-%------------------------------------------------
-
-	\begin{rSubsection}{AJAX Hosting}{December 2009 - October 2010}{Lead Developer}{Austin, TX}
-		\item Aenean ut gravida lorem. Ut turpis felis, Perl pulvinar a semper sed, adipiscing id dolor.
-		\item Curabitur dapibus enim sit amet elit pharetra tincidunt website feugiat nisl imperdiet. Ut convallis AJAX libero in urna ultrices accumsan.
-		\item Cum sociis natoque penatibus et magnis dis MySQL parturient montes, nascetur ridiculus mus.
-		\item In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
-		\item Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper.
-	\end{rSubsection}
-
-%------------------------------------------------
-
-	\begin{rSubsection}{TinySoft}{January 2008 - April 2010}{Web Designer \& Developer}{Gainesville, GA}
-		\item Vivamus PostgreSQL fermentum semper porta. Nunc diam velit PHP, adipiscing ut tristique vitae
-		\item Maecenas convallis ullamcorper ultricies stylesheets.
-		\item Quisque mi metus, unit tests CSS ornare sit amet fermentum et, tincidunt et orci.
-		\item Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id
-	\end{rSubsection}
-
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Technical Strengths}
+\begin{rSection}{Skills}
 
 	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
-		Computer Languages & Prolog, Haskell, AWK, Erlang, Scheme, ML \\
-		Protocols \& APIs & XML, JSON, SOAP, REST \\
-		Databases & MySQL, PostgreSQL, Microsoft SQL \\
-		Tools & SVN, Vim, Emacs
+    	Languages & Rust, Python, Java, C, C++, C\#, JavaScript, HTML, CSS, SQL, SML, Racket, Ruby, Lua, \LaTeX \\[1ex] % Adds vertical space
+    	Tools & Git/GitHub, Vim, Huggingface, Linux, SQLite, PostgreSQL, Docker, Vercel, AWS, Shuttle \\[1ex] % Adds vertical space
+    	Libraries & Leptos (Rust), Tauri (Rust), Burn (Rust), Axum (Rust), NumPy, Matplotlib, Tensorflow, \\
+    	& PyTorch, Next.JS, React \\
 	\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+
+	\begin{rSubsection}{Qircuit}{January 2025 - Present}{\href{https://github.com/Illuminate-dev/qircuit}{\textnormal{https://github.com/Illuminate-dev/qircuit}}}{}
+		\item Developed a quantum computing simulator in Rust that visualizes quantum gates and operations. 
+		\item Implemented linear algebra computations for quantum state evolution.
+		\item Created proof-of-concept for Grover’s algorithm (quantum search algorithm).
+	\end{rSubsection}
+
+%------------------------------------------------
+
+	\begin{rSubsection}{RetinaVue}{November - December 2025}{}{}
+		\item Built a deep learning model using TensorFlow to detect diabetic retinopathy from retinal images.
+		\item Achieved 97\% accuracy by training on a dataset of medical images.
+		\item Developed a desktop app using Tauri and Leptos.
+	\end{rSubsection}
+
+%------------------------------------------------
+
+	\begin{rSubsection}{The Magnolia Street Journal}{July - October 2024}{\href{http://themsj.org}{\textnormal{http://themsj.org}}}{}
+		\item Created a full-stack web platform for publishing news articles with a content management system.
+		\item Developed the backend using Axum with SQLite for data storage.
+		\item Implemented frontend using a custom-built template system for HTML and CSS.
+	\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	ECS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Extracirriculars}
+
+	\begin{rSubsection}{USA Computing Olympiad Club}{August 2024 - Present}{President}{}
+		\item Led weekly training sessions to help students improve competitive programming skills.
+		\item Prepared members for regional coding competitions.
+		\item Achieved \textbf{USACO Gold} ranking.
+	\end{rSubsection}
+
+%------------------------------------------------
+
+	\begin{rSubsection}{CyberPatriots}{2023 - Present}{}{}
+		\item Secured systems in national cybersecurity competitions, focusing on Windows hardening.
+		\item Ranked among the top 20 teams in the country.
+		% \item Developed expertise in network security, cryptography, and forensics.
+	\end{rSubsection}
+
+%------------------------------------------------
+
+	% \begin{rSubsection}{FIRST Robotics Club}{August 2024 - Present}{}{}
+	% 	\item Developed and programmed autonomous and teleoperated robot functions for competitions using Java and WPILib.
+	% 	\item Collaborated with a team to design, build, and optimize robot mechanisms for various challenges.
+	% 	\item Competed in regional and national events, applying problem-solving and teamwork skills in high-pressure environments.
+	% 	\item Assisted in mentoring new members, teaching programming concepts and hardware integration.
+	% \end{rSubsection}
 
 \end{rSection}
 
