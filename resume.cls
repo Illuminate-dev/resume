@@ -120,9 +120,9 @@
 
 % Defines the rSection environment for the major sections within the CV
 \newenvironment{rSection}[1]{ % The single parameter is for the section title
-	\medskip % Vertical whitespace
+	\smallskip % Vertical whitespace
 	\MakeUppercase{\textbf{#1}} % Section title
-	\medskip % Vertical whitespace
+	\smallskip % Vertical whitespace
 	\hrule % Horizontal rule
 	\begin{list}{}{ % List to indent the entire content of the section
 		\setlength{\leftmargin}{1.5em} % Indent to the left of the list
@@ -147,5 +147,5 @@
 		\setlength{\itemsep}{-0.5em} \vspace{-0.5em} % Reduce vertical spacing between items in the list for a tighter look
 }{
 	\end{list}
-	\vspace{0.5em} % Vertical whitespace after the end of the list
+	% \vspace{0.5em} % Vertical whitespace after the end of the list
 }
